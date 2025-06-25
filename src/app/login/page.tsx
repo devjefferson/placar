@@ -3,9 +3,9 @@
 import { LoginForm } from '@/components/LoginForm';
 import { useAuth } from '@/contexts/AuthContext';
 import { useRouter, useSearchParams } from 'next/navigation';
-import { useEffect } from 'react';
+import { useEffect, Suspense } from 'react';
 
-export default function LoginPage() {
+function LoginContent() {
   const { isAuthenticated } = useAuth();
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -32,5 +32,21 @@ export default function LoginPage() {
         <LoginForm />
       </div>
     </div>
+  );
+}
+
+export default function LoginPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 p-4">
+        <div className="w-full max-w-md bg-white rounded-lg shadow-md overflow-hidden">
+          <div className="flex justify-center items-center p-8">
+            <div className="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-blue-500"></div>
+          </div>
+        </div>
+      </div>
+    }>
+      <LoginContent />
+    </Suspense>
   );
 }
