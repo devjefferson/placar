@@ -1,0 +1,42 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="90" fill="url(#bgGradient)" stroke="url(#goldGradient)" stroke-width="4"/>
+  
+  <!-- Trophy icon -->
+  <g transform="translate(100, 80)">
+    <!-- Trophy base -->
+    <rect x="-15" y="25" width="30" height="8" rx="4" fill="url(#goldGradient)"/>
+    <rect x="-12" y="20" width="24" height="8" rx="4" fill="url(#goldGradient)"/>
+    
+    <!-- Trophy handles -->
+    <path d="M -15 20 Q -25 15 -25 10 Q -25 5 -20 5 Q -15 5 -15 10 Q -15 15 -15 20" 
+          fill="none" stroke="url(#goldGradient)" stroke-width="3"/>
+    <path d="M 15 20 Q 25 15 25 10 Q 25 5 20 5 Q 15 5 15 10 Q 15 15 15 20" 
+          fill="none" stroke="url(#goldGradient)" stroke-width="3"/>
+    
+    <!-- Trophy cup -->
+    <ellipse cx="0" cy="10" rx="12" ry="8" fill="url(#goldGradient)"/>
+    <ellipse cx="0" cy="8" rx="10" ry="6" fill="#1e293b"/>
+  </g>
+  
+  <!-- Text "VETERANO" -->
+  <text x="100" y="140" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">
+    VETERANO
+  </text>
+  
+  <!-- Text "FC" -->
+  <text x="100" y="155" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="url(#goldGradient)">
+    FC
+  </text>
+</svg> 

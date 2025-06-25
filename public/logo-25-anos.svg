@@ -1,0 +1,45 @@
+<svg width="300" height="150" viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFA500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e293b;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:0.9" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background with rounded corners -->
+  <rect x="10" y="10" width="280" height="130" rx="20" fill="url(#bgGradient)" stroke="url(#goldGradient)" stroke-width="3"/>
+  
+  <!-- Large "25" -->
+  <text x="150" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="60" font-weight="bold" fill="url(#goldGradient)" filter="url(#glow)">
+    25
+  </text>
+  
+  <!-- "ANOS" text -->
+  <text x="150" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white">
+    ANOS
+  </text>
+  
+  <!-- Decorative elements -->
+  <circle cx="50" cy="40" r="8" fill="url(#goldGradient)" opacity="0.7"/>
+  <circle cx="250" cy="40" r="8" fill="url(#goldGradient)" opacity="0.7"/>
+  <circle cx="50" cy="110" r="6" fill="url(#goldGradient)" opacity="0.5"/>
+  <circle cx="250" cy="110" r="6" fill="url(#goldGradient)" opacity="0.5"/>
+  
+  <!-- Small stars -->
+  <g fill="url(#goldGradient)" opacity="0.8">
+    <polygon points="30,25 32,30 37,30 33,34 35,39 30,36 25,39 27,34 23,30 28,30" transform="scale(0.5)"/>
+    <polygon points="270,25 272,30 277,30 273,34 275,39 270,36 265,39 267,34 263,30 268,30" transform="scale(0.5)"/>
+  </g>
+</svg> 

@@ -1,0 +1,29 @@
+<svg width="120" height="80" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="constructionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Construction elements -->
+  <rect x="30" y="25" width="60" height="30" fill="url(#constructionGradient)"/>
+  
+  <!-- Bricks pattern -->
+  <rect x="35" y="30" width="15" height="8" fill="#fed7aa"/>
+  <rect x="55" y="30" width="15" height="8" fill="#fed7aa"/>
+  <rect x="75" y="30" width="15" height="8" fill="#fed7aa"/>
+  <rect x="35" y="42" width="15" height="8" fill="#fed7aa"/>
+  <rect x="55" y="42" width="15" height="8" fill="#fed7aa"/>
+  <rect x="75" y="42" width="15" height="8" fill="#fed7aa"/>
+  
+  <!-- Number 5 -->
+  <text x="60" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="url(#constructionGradient)">
+    5
+  </text>
+  
+  <!-- Text -->
+  <text x="60" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="bold" fill="#1f2937">
+    5 MARIAS
+  </text>
+</svg> 
